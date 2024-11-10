@@ -5,7 +5,6 @@ import {
   ManyToMany,
   ManyToOne,
   OneToOne,
-  PrimaryColumn,
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { PropertyFeature } from './propertyFeature.entity';

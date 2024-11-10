@@ -3,28 +3,19 @@ import {
   Controller,
   Delete,
   Get,
-  Headers,
   Param,
-  ParseBoolPipe,
   ParseIntPipe,
   Patch,
   Post,
-  Query,
-  UsePipes,
-  ValidationPipe,
+  Query
 } from '@nestjs/common';
+
 import { CreatePropertyDto } from './dto/createProperty.dto';
-
-import { ParseIdPipe } from './pipes/parseIdPipe';
-import { ZodValidationPipe } from './pipes/zodValidationPipe';
-import {
-  CreatePropertyZodDto,
-  createPropertySchema,
-} from './dto/createPropertyZod.dto';
-
-import { PropertyService } from './property.service';
 import { UpdatePropertyDto } from './dto/updateProperty.dto';
 import { PaginationDTO } from './dto/pagination.dto';
+
+import { ParseIdPipe } from './pipes/parseIdPipe';
+import { PropertyService } from './property.service';
 
 @Controller('property')
 export class PropertyController {

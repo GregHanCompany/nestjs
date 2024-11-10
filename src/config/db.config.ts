@@ -1,6 +1,6 @@
 import { PostgresConnectionOptions } from 'typeorm/driver/postgres/PostgresConnectionOptions';
-import * as path from 'path';
 import { registerAs } from '@nestjs/config';
+import * as path from 'path';
 
 export default registerAs(
   'dbconfig.dev',
